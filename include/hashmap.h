@@ -1,3 +1,6 @@
+#ifndef HASHMAP_H
+#define HASHMAP_H
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -24,3 +27,5 @@ void* HashMapFind(struct HashMap* hashmap, const char* key);
 bool HashMapContains(struct HashMap* hashmap, const char* key);
 size_t HashMapSize(struct HashMap* hashmap);
 void HashMapFree(struct HashMap* hashmap);
+
+#endif /* HASHMAP_H */
